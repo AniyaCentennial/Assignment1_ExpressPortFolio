@@ -1,0 +1,48 @@
+<!-- File name: Assignment1_ExpressPortFolio, Student’s Name: Aniya, StudentID: 301342370, and Date: 1/Oct/2023 -->
+
+
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<main class="container">
+
+  <div class="jumbotron">
+    
+    <section id="welcome"></section>
+    <h1 class="display-4">Welcome to <%= title %> page</h1><br>
+  </section>
+
+    <div class = "content-container">
+    <section id="mission">
+    <h2>Mission Statement</h2>
+    <p>I am dedicated to delivering high-quality web solutions that meet the needs of clients and users.</p>
+    </div></section>
+
+    <section id="Navigation Buttons">
+      <form action="/about" method="GET">
+        <button style="background-color: #4f565e; color: #fff;" type="submit">Learn More About Me</button>
+      </form><br>
+
+      <form action="/projects" method="GET">
+        <button style="background-color: #4f565e; color: #fff;" type="submit">Explore My Projects</button>
+      </form><br>
+
+      <form action="/services" method="GET">
+        <button style="background-color: #4f565e; color: #fff;" type="submit">See My Services</button>
+      </form><br>
+
+      <form action="/contact" method="GET">
+        <button style="background-color: #4f565e; color: #fff;" type="submit">Contact Me</button>
+      </form><br>
+
+    </section>
+    </div>
+    </main>
+    <!--bottom nav-->
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
+   
